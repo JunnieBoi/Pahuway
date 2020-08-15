@@ -1,0 +1,92 @@
+.buttonstyle
+{
+    background-color:#DC6E9F;
+    color:white;
+    font-family: 'VT323', monospace;
+
+}
+.small
+{
+ height:70px;
+ width:70px;
+}
+
+.indigo
+{
+    color:#FF69B4;
+}
+.fadein
+{
+    display:none;
+}
+.replaceable
+{
+    font-family: 'Open Sans', sans-serif;
+}
+.playlist
+{
+     color:pink;
+    font-family: 'Yellowtail', cursive;
+    font-size:large;
+}
+.alignright
+{
+    text-align:justify;
+}
+.slowfadein
+{
+    display: none;
+}
+
+.hidden
+{
+    display:none;
+}
+.hide
+{
+    display:none;
+}
+
+.img
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+.title
+{
+    color:pink;
+    font-family:"Overpass";
+    text-align:center;
+}
+body
+{
+    background-color:black;
+}
+
+.bold
+{
+    font-weight:bold;
+}
+
+.header
+{
+
+    text-align:center;
+    font-family:"Overpass";
+}
+
+.pink
+{
+    color:#DC6E9F;
+}
+
+
+
+a:link
+{
+    color:#A96BDB;
+}
+a:visited
+{
+    color:#A96BDB;
+}

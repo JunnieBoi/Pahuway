@@ -1,0 +1,389 @@
+<html lang ="en">
+    <head>
+        <title>Music Recommendations</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="icon" href="https://i.redd.it/kncyzst440u11.jpg">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@414&display=swap" rel="stylesheet">
+        <link href="homestyle.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
+    </head>
+    <body title="musicrec">
+        <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+        <br>
+        <h1 class="title bold"><img src="images/sunset.gif" class="slowfadein small imgcenter rounded" onerror="this.src ='images/sunset.gif';">&nbsp <span class="hidden">Pahuway</span> &nbsp<img src="images/sunset.gif" class="slowfadein small imgcenter rounded" onerror="this.src ='images/sunset.gif';"></h1>
+        <br>
+        <br>
+        <br>
+        <blockquote class="blockquote replacelater title"><h4 class="header pink"><span class="hide">If music </span> <span class="hide">be the food of love, </span> <span class="hide">play on</span><span class="hide"><br><br>- William Shakespeare </span></h4></blockquote>
+        <br><br>
+        <center>
+        <div class="dropright hide">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select music genre here
+      </button>
+      <div class="dropdown-menu musicrec" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button" onclick="buttonDeterminer(0)">Indie</button>
+    <button class="dropdown-item" type="button" onclick="buttonDeterminer(1)">Anime</button>
+    <button class="dropdown-item" type="button" onclick="buttonDeterminer(2)">Lo-fi</button>
+      </div>
+        </div>
+
+
+<div id="CarouselGenreChooser">
+    <div id="IndieMusicCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+        <br>
+      <ol class="carousel-indicators">
+    <li data-target="#IndieMusicCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="1"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="2"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="3"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="4"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="5"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="6"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="7"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="8"></li>
+    <li data-target="#IndieMusicCarousel" data-slide-to="9"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <iframe id="singingagain" width="888" height="500" src="https://www.youtube.com/embed/h-Yiku4Al48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <div class="carousel-caption d-none d-md-block">
+    <h5>Who's Got You Singing Again</h5>
+    <h5>by PREP</h5>
+    <p>Memorable lyric: "Is that it? Was there something I missed in the silences?"</p>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <iframe id="heygirl" width="888" height="500" src="https://www.youtube.com/embed/HZ4bTlHjA_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="carousel-caption d-none d-md-block">
+      <h5>hey girl</h5>
+      <h5>by Boy Pablo</h5>
+      <p>Memorable lyric: "I'm asking, 'cause you're nervous. You look so fine, you make me shiver"</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <iframe "lalalostyou" width="888" height="500" src="https://www.youtube.com/embed/5YlJt5EYrlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="carousel-caption d-none d-md-block">
+      <h5>La La Lost You (Explicit)</h5>
+      <h5>by </h5>
+      <p>Memorable lyric: "And you sold your car. Now you walk for miles"</p>
+    </div>
+  </div>
+
+
+
+
+  <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/xwKjzduZ1V4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <div class="carousel-caption d-none d-md-block">
+     <h5>Pluto</h5>
+      <h5>by Phum Viphurit</h5>
+      <p>Memorable lyric: "Time, I would buy. But it's time for goodbye"</p>
+      </div>
+      </div>
+
+
+     <div class="carousel-item">
+  <iframe width="888" height="500" src="https://www.youtube.com/embed/YWN81V7ojOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Sanctuary</h5>
+        <h5>by Joji</h5>
+        <p>Memorable lyric: "If you've been waitin' for fallin' in love. Babe, you don't have to wait on me"</p>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/HzQ4xJsEwiE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Losing You</h5>
+        <h5>by Boy Pablo</h5>
+        <p>Memorable lyric: "I'm getting tired of everything you say. But I want you anyway"</p>
+        </div>
+    </div>
+
+
+      <div class="carousel-item">
+    <iframe width="888" height="500" src="https://www.youtube.com/embed/KMGKPLgCByA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Full Catastrophe</h5>
+        <h5>by Summer Salt</h5>
+        <p>Memorable lyric: "Where I've been lifting the end of an empty beach. Living my life full catastrophe"</p>
+        </div>
+    </div>
+
+
+
+      <div class="carousel-item">
+    <iframe width="888" height="500" src="https://www.youtube.com/embed/PWK8EuUSMSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Easy</h5>
+        <h5>by Mac Ayres</h5>
+        <p>Memorable lyric: "Somewhere along the way I guess you got under my skin"</p>
+        </div>
+    </div>
+
+
+     <div class="carousel-item">
+    <iframe width="888" height="500" src="https://www.youtube.com/embed/7bFFaTGOVI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Drive Safe (Explicit)</h5>
+        <h5>by Rich Brian</h5>
+        <p>Memorable lyric: "**** all the good times, it's a past tense. I sleep and wake up when the world ends"</p>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+    <iframe width="888" height="500" src="https://www.youtube.com/embed/UbqqkHbM99I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       <div class="carousel-caption d-none d-md-block">
+       <h5>R&B All Night</h5>
+        <h5>by KnowKnow</h5>
+        <p>Memorable lyric: </p>
+        </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+  <a class="carousel-control-prev" href="#IndieMusicCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#IndieMusicCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+ <div id="AnimeMusicCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+        <br>
+      <ol class="carousel-indicators">
+    <li data-target="#AnimeMusicCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="1"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="2"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="3"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="4"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="5"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="6"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="7"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="8"></li>
+    <li data-target="#AnimeMusicCarousel" data-slide-to="9"></li>
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/yxkyElx0pXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="carousel-caption d-none d-md-block">
+    <h5>Shunkan Sentimental</h5>
+    <h5>by Scandal</h5>
+    <p>Anime Source: Full Metal Alchemist: Brotherhood</p>
+    </div>
+    </div>
+
+    <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/cieP1QwyOvc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Just Awake</h5>
+      <h5>by Fear, And Loathing in Las Vegas</h5>
+      <p>Anime Source: Hunter X Hunter</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <iframe width="888" height="500" src="https://www.youtube.com/embed/i8Y9uAekkgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="carousel-caption d-none d-md-block">
+      <h5>Jikai Yokoku (Next Episode Preview)</h5>
+      <h5>by Shiro Sagisu</h5>
+      <p>Anime Source: Neon Genesis Evangelion</p>
+    </div>
+  </div>
+
+
+
+
+  <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/H1r-OAnpZ9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <div class="carousel-caption d-none d-md-block">
+     <h5>The Name of Life</h5>
+      <h5>by Joe Hisaishi</h5>
+      <p>Anime Source: Spirited Away</p>
+      </div>
+      </div>
+
+
+     <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/pmanD_s7G3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Gurenge</h5>
+        <h5>by LiSa</h5>
+        <p>Anime Source: Kimetsu No Yaiba</p>
+        </div>
+    </div>
+
+
+     <div class="carousel-item">
+        <iframe width="888" height="500" src="https://www.youtube.com/embed/qL5x6JuaeHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>My Secret</h5>
+        <h5>by Saaya Mizuno</h5>
+        <p>Anime Source: Kaichou wa Maid-sama!</p>
+        </div>
+    </div>
+
+
+    <div class="carousel-item">
+    <iframe width="888" height="500" src="https://www.youtube.com/embed/aqRuzjIBkxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+           <h5>Masayume Chasing</h5>
+        <h5>by BoA</h5>
+        <p>Anime Source: Fairy Tail</p>
+
+        </div>
+    </div>
+
+
+
+  <div class="carousel-item">
+    <iframe width="888" height="500" src="https://www.youtube.com/embed/UccSonn2tT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Sekai Wa Koi Ni Ochiteru</h5>
+        <h5>by CHiCO</h5>
+        <p>Anime Source: Ao Haru Ride</p>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+    <iframe width="888" height="500" src="https://www.youtube.com/embed/O8T2u83GIiI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Innocence</h5>
+        <h5>by Eir Aoi</h5>
+        <p>Anime Source: Sword Art Online</p>
+        </div>
+    </div>
+
+     <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/X59yPeVk_70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Again</h5>
+        <h5>by Yui</h5>
+        <p>Anime Source: Fullmetal Alchemist: Brotherhood</p>
+        </div>
+    </div>
+
+
+  </div>
+
+
+  <a class="carousel-control-prev" href="#AnimeMusicCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#AnimeMusicCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<div id="LofiMusicCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+        <br>
+      <ol class="carousel-indicators">
+    <li data-target="#LofiMusicCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#LofiMusicCarousel" data-slide-to="1"></li>
+    <li data-target="#LofiMusicCarousel" data-slide-to="2"></li>
+    <li data-target="#LofiMusicCarousel" data-slide-to="3"></li>
+    <li data-target="#LofiMusicCarousel" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/zw47ymC0RNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="carousel-caption d-none d-md-block">
+    <h5>in your arms</h5>
+    <h5>by saib</h5>
+    </div>
+    </div>
+    <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/6jGPypPNEg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="carousel-caption d-none d-md-block">
+      <h5>affection</h5>
+      <h5>by Jinsang</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/FSnuF1FPSIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="carousel-caption d-none d-md-block">
+      <h5>bossa uh</h5>
+      <h5>by potsu</h5>
+    </div>
+  </div>
+
+
+
+
+  <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/vDbPMAlZ-04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <div class="carousel-caption d-none d-md-block">
+     <h5>Water</h5>
+      <h5>by Caleb Belkin</h5>
+      </div>
+      </div>
+
+
+     <div class="carousel-item">
+<iframe width="888" height="500" src="https://www.youtube.com/embed/fs0BCIUQ7Ws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="carousel-caption d-none d-md-block">
+       <h5>Soulful</h5>
+        <h5>by L’Indécis</h5>
+        </div>
+    </div>
+
+  </div>
+
+
+  <a class="carousel-control-prev" href="#LofiMusicCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#LofiMusicCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+        </center>
+        <br>
+
+        <br>
+        <audio autoplay class="music"><source src=""></audio>
+        <script src="javascript/home.js"></script>
+        <script src="javascript/carousel.js"></script>
+
+    </body>
+</html>
