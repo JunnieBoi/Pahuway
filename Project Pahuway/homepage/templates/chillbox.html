@@ -1,0 +1,32 @@
+{% extends "second_layout.html" %}
+
+
+{% block title %}
+    Chill Box!
+{% endblock %}
+{% block musicintroduction %}
+    {% include "musictemplate.html" %}
+{% endblock %}
+
+{% block titlescript %}
+    <script type ="text/javascript">
+        document.body.title = "chillbox";
+    </script>
+{% endblock %}
+
+{% block quote %}
+    <blockquote class="blockquote replacelater title"><h4 class="header pink"><span class="hide">Here at Pahuway, </span> <span class="hide">we value the virtue</span> <span class="hide"><br>of caring for one's self</span><span class="hide"> and pursuing one's own passion  </span></h4></blockquote>
+    <br><br>
+{% endblock %}
+
+{% block content %}
+    <br>
+    <center><img class ="hide img scroll rounded target" src=""></center>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+
+{% block additionalscripts %}
+    <script src="static/javascript/chillbox.js"></script>
+{% endblock %}

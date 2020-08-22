@@ -1,0 +1,26 @@
+{% extends "second_layout.html" %}
+
+
+{% block title %}
+    Credits
+{% endblock %}
+{% block musicintroduction %}
+    {% include "creditsmusictemplate.html" %}
+{% endblock %}
+
+{% block titlescript %}
+    <script type ="text/javascript">
+        document.body.title = "credits";
+    </script>
+{% endblock %}
+
+{% block quote %}
+    <blockquote class="blockquote replacelater title"><h4 class="header pink"><span class="hide">Thank you to everyone</span> <span class="hide">who made this project possible!</span> <span class="hide"><br>For the people who have managed</span><span class="hide"> to reach here, I have a surprise for you!  </span></h4></blockquote>
+    <br><br>
+{% endblock %}
+
+{% block content %}
+ <h4 class="header pink"><span class="hide">Producer:</span> <span class="hide">Orenda PH</span><br><br><span class="hide">Content Creator/Web Developer:</span> <span class="hide"> Junel Alje Isanan</span> <br><br><br><span class="hide"> Special thanks to: </span><br><br><br> <span class="hide">Nicole Melisse Campos</span><span class="hide">, Dale John Caballero</span> <span class="hide"> - For the color scheme and font suggestions to this project</span> <br><br><br> <span class="hide">Samantha Marie Murillo</span> <span class="hide"> - For the music recommendations </span><br><br><br><span class="hide">Benjie Gallero</span> <span class="hide"> - For the quotes suggestion </span> <br><br><br>
+<span class="hide">Aiesha Laboton</span><span class="hide">, Ian Salazar</span><span class="hide">, Lyka Joyce Aquino</span> <span class="hide"> - For the extensive UX testing</span> <br><br><br> <span class="hide"> And to everyone else who took their time </span> <span class="hide"> to view this website, thank you so much!</span></h4>
+
+{% endblock %}

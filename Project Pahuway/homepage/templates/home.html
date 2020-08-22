@@ -1,0 +1,27 @@
+{% extends "second_layout.html" %}
+
+
+{% block title %}
+    Home
+{% endblock %}
+{% block musicintroduction %}
+    {% include "musictemplate.html" %}
+{% endblock %}
+
+{% block titlescript %}
+    <script type ="text/javascript">
+        document.body.title = "home";
+    </script>
+{% endblock %}
+
+{% block quote %}
+    <blockquote class="blockquote replacelater title"><h4 class="header pink"><span class="hide">n. </span> <span class="hide">a rest; </span> <span class="hide">a short time for relaxing</span><span class="hide"> and doing something else.  </span></h4></blockquote>
+    <br><br>
+{% endblock %}
+
+{% block content %}
+    <h4 class="header pink"><span class="hide">Dear stranger,</span> <span class="hide">let's take a long ride home.</span> </h4>
+    <br>
+    <center><img class ="hide img scroll rounded" src="static/images/animu.gif"></center>
+    <br>
+{% endblock %}
