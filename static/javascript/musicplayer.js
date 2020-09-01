@@ -2,8 +2,7 @@
 let music = ["90's flav - call me","Chinsaku - See ya...","dj quads - it's near",
 "driver - the eye of truth","Eddie Rohosy - Night Ride","idealism - dont say a word","Jinsang - affection.",
 "Joakim Karud - Dreams","kudasai - a light of mine","kudasai - A night together","kudasai - technicolor",
-"Medda - Serenity","mt. fujitive - sunrise","prima - june gloom.","Joakim Karud - Canals","SHIRO - rainy day in tokyo",
-"The Deli - 5:32PM"];
+"Medda - Serenity","mt. fujitive - sunrise","prima - june gloom.","Joakim Karud - Canals","SHIRO - rainy day in tokyo"];
 let music_counter = 0;
 let trueplayer = [];
 let temporaryvar = -1;
