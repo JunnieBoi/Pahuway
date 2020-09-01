@@ -191,7 +191,7 @@ $(document).ready(function(){
         setTimeout(function(){$(".replacelater").hide();},menutimer);
          setTimeout(function()
          {
-            $(".replacelater").html("<span class='header pink'><a href='/home'>Home</a> | <a href='/about'>About</a> | <a href='/chillbox'> Chill Box</a> | <a href='/musicrec'>Music Recommendations</a> | <a href='credits'>Credits </a></span>");
+            $(".replacelater").html("<span class='header pink'><a href='/home'>Test Drive</a> | <a href='/about'>About</a> | <a href='/chillbox'> Chill Box</a> | <a href='/musicrec'>Music Recommendations</a> | <a href='credits'>Credits </a></span>");
          },menutimer + 100);
          setTimeout(function(){$(".replacelater").fadeIn(5000);},menutimer + 200);
 
