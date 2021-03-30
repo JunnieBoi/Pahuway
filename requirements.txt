@@ -95,7 +95,7 @@ pycodestyle==2.6.0
 pycosat==0.6.3
 pycurl==7.43.0.5
 pyflakes==2.2.0
-Pygments==2.6.1
+Pygments==2.7.4
 pyparsing==2.4.7
 pyreadline==2.1
 pyrsistent==0.16.0
