@@ -138,7 +138,7 @@ tornado==6.0.4
 traitlets==4.3.3
 ujson==1.35
 unicodecsv==0.14.1
-urllib3==1.25.9
+urllib3==1.26.5
 vim==0.0.1
 webencodings==0.5.1
 Werkzeug==1.0.1
